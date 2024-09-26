@@ -1,0 +1,28 @@
+#spinner {
+    display: none;
+}
+
+#spinner.show {
+    display: block;
+}
+
+#errorMessage {
+    display: none;
+    color: red;
+}
+
+#errorMessage.show {
+    display: block;
+    color: red;
+}
+
+#successMessage {
+    display: none;
+    color: green;
+}
+
+#successMessage.show {
+    display: block;
+    color: green;
+}
+

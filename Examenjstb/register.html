@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full bg-gradient-to-br from-gray-900 to-gray-600 text-white">
+    <div class="mx-auto px-4 w-full sm:w-2/3 lg:w-1/4">
+      <h1 class="text-4xl sm:text-5xl text-center my-6">✉️ Inscription</h1>
+
+ 
+      <div
+        id="error"
+        class="text-center bg-red-500 text-white my-6 text-3xl py-4 hidden"
+      >
+        Les mots de passe ne correspondent pas ou sont invalides.
+      </div>
+
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="email" class="form-label text-2xl">Adresse email</label>
+          <input
+            type="email"
+            class="form-control w-full p-2 text-[#444] text-2xl rounded-md"
+            id="email"
+            placeholder="Email"
+            required
+          />
+
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label text-2xl">Mot de passe</label>
+          <input
+            type="password"
+            class="form-control w-full p-2 text-[#444] text-2xl rounded-md"
+            id="password"
+            placeholder="Mot de passe"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label text-2xl"
+            >Confirmation du mot de passe</label
+          >
+          <input
+            type="password"
+            class="form-control w-full p-2 text-[#444] text-2xl rounded-md"
+            id="confirmPassword"
+            placeholder="Confirmer le mot de passe"
+            required
+          />
+        </div>
+        <div class="text-center mt-8">
+          <button
+            type="submit"
+            class="text-2xl bg-blue-500 hover:bg-blue-700 py-3 px-8 rounded"
+          >
+            Inscription
+          </button>
+        </div>
+      </form>
+
+      <div id="spinner" class="text-center mt-8 hidden">
+        <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full"></div>
+        <p class="text-lg mt-2">Chargement</p>
+      </div>
+
+      <div
+        id="successMessage"
+        class="text-center bg-green-500 text-white my-6 text-3xl py-4 hidden"
+      >
+        Inscription réussie !
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
